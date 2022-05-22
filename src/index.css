@@ -1,5 +1,3 @@
-@import-normalize; /* bring in normalize.css styles */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,4 +10,60 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+li {
+  list-style: none;
+}
+.Feedback__leave {
+  margin: 0 auto;
+  height: 100vh;
+  width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 40px;
+  color: #010101;
+}
+.Feedback__leave p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  padding-left: 40px;
+}
+.Feedback__buttons {
+  display: flex;
+  align-items: center;
+}
+.Feedback__buttons li {
+  margin-right: 10px;
+}
+.Feedback__buttons button {
+  border-color: inherit;
+  padding: 5px 10px;
+  color: aliceblue;
+  border-radius: 5px;
+}
+.Statistics__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  padding-left: 40px;
+}
+.Statistics__list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+.Statistics__list li {
+}
+.Good {
+  background-color: green;
+}
+
+.Neutral {
+  background-color: orange;
+}
+
+.Bad {
+  background-color: red;
 }
