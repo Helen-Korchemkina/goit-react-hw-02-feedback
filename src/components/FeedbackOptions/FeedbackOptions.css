@@ -1,28 +1,28 @@
 .Feedback__buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Feedback__buttons li {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .Feedback__buttons button {
-    border-color: inherit;
-    padding: 5px 10px;
-    color: aliceblue;
-    border-radius: 5px;
-    cursor: pointer;
+  border-color: inherit;
+  padding: 5px 10px;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .Good {
-    background-color: green;
+  background-color: green;
 }
 
 .Neutral {
-    background-color: orange;
+  background-color: orange;
 }
 
 .Bad {
-    background-color: red;
+  background-color: red;
 }
