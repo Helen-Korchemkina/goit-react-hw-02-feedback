@@ -37,7 +37,7 @@ class App extends Component {
     const { good } = this.state;
     const total = this.countTotalFeedback();
     let positiveFeedbackPercentage = 0;
-    console.log(`total`, total);
+    
     total !== 0 &&
       (positiveFeedbackPercentage = Math.round(
         (Number(good) / Number(total)) * 100
@@ -47,14 +47,14 @@ class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    const total = good + neutral + bad;
+    const total = this.countTotalFeedback();
     
     return (
       <div className="Feedback__leave">
         <Section title="Please leave feedback">
  <FeedbackOptions onLeaveFeedbackGood={this.clickOnGoodButton} onLeaveFeedbackNeutral={this.clickOnNeutralButton} onLeaveFeedbackBad={this.clickOnBedButton}></FeedbackOptions>
         </Section>
-        {total === 0
+        {total !== 0
           ? <div> 
         <Section title="Statistics">
                   <Statistics
