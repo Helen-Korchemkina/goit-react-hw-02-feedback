@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Statistics from './Statistics/Statistics';
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import Section from './Section/Section';
-import Notification from './Notification/Notification';
+import Statistics from '../Statistics/Statistics';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import Section from '../Section/Section';
+import Notification from '../Notification/Notification';
+import s from './App.module.css';
 
 class App extends Component {
   state = {
@@ -41,7 +42,7 @@ class App extends Component {
     const total = this.countTotalFeedback();
 
     return (
-      <div className="Feedback__leave">
+      <div className={s.Feedback__leave}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}

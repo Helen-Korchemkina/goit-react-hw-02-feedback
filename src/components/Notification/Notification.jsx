@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Notification.css';
+import s from './Notification.module.css';
 
 const Notification = ({ message }) => (
   <div>
-    <h2 className="Notification__massage">{message}</h2>
+    <h2 className={s.massage}>{message}</h2>
   </div>
 );
 
